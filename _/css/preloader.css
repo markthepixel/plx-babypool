@@ -1,0 +1,48 @@
+
+div.preloader	{
+	height: 0;
+	width: 0;
+	position: absolute;
+	overflow: hidden;
+	top: -9999px;
+	left: -9999px;
+}
+
+div.setupHover {
+	
+	background: url('http://www.playtexbabypool.com/dev/_/img/setup-hoverState.png') no-repeat -9999px -9999px;
+}
+
+div.viewSplitHover {
+	
+	background: url('http://www.playtexbabypool.com/dev/_/img/split-view-hoverState.png') no-repeat -9999px -9999px;
+}
+
+div.viewHover {
+	
+	background: url('http://www.playtexbabypool.com/dev/_/img/view-hoverState.png') no-repeat -9999px -9999px;
+}
+
+div.manageHover {
+	
+	background: url('http://www.playtexbabypool.com/dev/_/img/manage-hoverState.png') no-repeat -9999px -9999px;
+}
+
+div.playHover {
+	
+	background: url('http://www.playtexbabypool.com/dev/_/img/play-hoverState.png') no-repeat -9999px -9999px;
+}
+
+div.mommyBG {
+	
+	background: url('http://www.playtexbabypool.com/dev/_/img/new_mommy_background.jpg') no-repeat -9999px -9999px;
+}
+
+div.mommyMobileBG {
+	
+	background: url('http://www.playtexbabypool.com/dev/_/img/main-mommy-mobile.jpg') no-repeat -9999px -9999px;
+}
+
+div.closeHover	{
+    background: url("http://www.playtexbabypool.com/dev/_/img/popup_close_btn.png") no-repeat -9999px -9999px;
+}

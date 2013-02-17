@@ -1,0 +1,1319 @@
+/*
+  *                                *
+    * Playtex Baby Pool Main CSS *
+  *                                *
+*/
+
+/*** General CSS (All Pages) ***/
+  body {
+    color:#919598;
+    font-family: "proxima-nova",sans-serif;
+  }
+  .ui-page {
+    color:#919598;
+    /*max-width: 1024px !important;*/
+    margin: 0 auto !important;
+    position: relative !important;
+    font-size:16px;
+    font-family:"proxima-nova",sans-serif;
+    -webkit-backface-visibility:hidden;
+  }
+  input { background-color: #fff !important; }
+  .ui-content { padding:0 !important; }
+  .ui-content-padding { border-width:0;overflow:visible;overflow-x:hidden;padding:15px !important; }
+  .ui-collapsible-content { padding:15px !important; }
+  .clearfix { float: none; clear: both; }
+  .ui-slider-input { text-align:center; }
+  .ui-slider-input::-webkit-outer-spin-button,
+  .ui-slider-input::-webkit-inner-spin-button {
+  	-webkit-appearance: none;
+  	margin: 0;
+  }
+  .ui-checkbox-off .ui-icon, .ui-checkbox-off .ui-icon-checkbox-off,
+  .ui-checkbox-on  .ui-icon, .ui-checkbox-on  .ui-icon-checkbox-on { border:1px #a5a5a5 solid !important; }
+  .hideAll { display:none !important; }
+  .showMobile,
+  .showMobileBlock,
+  .showMobileTable { display:none; }
+  p { margin-top:8px; margin-bottom: 22px; }
+  
+  label,
+  .ui-checkbox,
+  .ui-controlgroup-label,
+  label.ui-input-text {
+    display:block;
+    font-weight:bold;
+    padding-top:20px;
+  }
+  .ui-popup-container label,
+  .ui-popup-container .ui-checkbox,
+  .ui-popup-container .ui-controlgroup-label,
+  .ui-popup-container label.ui-input-text {
+    padding-top:10px;
+  }
+  input.error { border-color: #f00 !important; }
+  .submit_wrap { text-align:center; margin:30px auto 10px; }
+  .ui-controlgroup-label .descTxt { font-weight: normal; }
+  .descTxt { font-size:14px; color:#707375; padding:0; margin:0; border:0; }
+  .notification_area {
+    display: none;
+    position: relative;
+    width: 100%;
+    margin:0 auto;
+    text-align:center;
+  }
+  .notification_area .notification {
+    position: absolute;
+    display:block;
+    background: #fff;
+    z-index: 300;
+    top:0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width:80%;
+    text-align:center;
+    padding: 5px;
+    color:#c61530;
+    border:2px #c61530 solid;
+  }
+  
+  h1 {
+    font-family: "proxima-nova-extra-condensed",sans-serif;
+    display: block;
+    font-size: 2.2em;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin:0 0 10px;
+    font-weight: normal;
+  }
+  h2 {
+    font-family: "proxima-nova-extra-condensed",sans-serif;
+    display: block;
+    font-size: 1.8em;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin:20px 0 10px;
+    font-weight: normal;
+  }
+  h3 {
+    font-family: "proxima-nova-extra-condensed",sans-serif;
+    display: block;
+    font-size: 1.17em;
+    margin:10px 0 5px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: normal;
+  }
+  h4 {
+    font-family: "proxima-nova-extra-condensed",sans-serif;
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin:10px 0 5px;
+    font-weight: normal;
+  }
+  h5 {
+    font-family: "proxima-nova-extra-condensed",sans-serif;
+    display: block;
+    font-size: 0.83em;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    margin:5px 0 5px;
+    font-weight: normal;
+  }
+  
+  .condensed {
+    font-family: "proxima-nova-extra-condensed",sans-serif !important;
+  }
+  
+  .headingHead {
+    font-size: 42px;
+    margin-bottom:0;
+    padding-bottom:0;
+  }
+  .headingDesc {
+     margin-top:2px;
+    padding-top:0;
+    font-size:14px;
+  }
+
+/* -----------------------   Slider Images Styling   ------------------------- */
+
+ .playButton, .viewButton, .viewSplit, .manageSplit {
+  color: #fff !important;
+  font-family: "proxima-nova-condensed", sans-serif;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  text-align: left !important;
+  line-height: 34px !important;
+  /*padding-left: 11px !important; */
+ }
+
+.sliderText {
+  padding-left: 15px;
+}
+
+.inline-icon  {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+}
+
+.lt-inline-icon  {
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  left: 15px;
+}
+
+.rt-sliderText  {
+  display: inline-block;
+  /*text-align: right;*/
+  width: auto !important;
+}
+
+ .playButton {
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/playButton.png') 0 0 no-repeat;
+    height: 35px;
+    width: 82px;
+    margin:5px auto 0;
+    padding:0;
+    display:block;
+    text-decoration:none;
+  }
+  .playButton:hover { background-image: url('http://www.playtexbabypool.com/dev/_/img/play-hoverState.png'); }
+  .viewButton { 
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/viewButton.png') 0 0 no-repeat;
+    height: 35px;
+    width: 80px;
+    margin:5px auto 0;
+    padding:0;
+    display:block;
+    text-decoration:none;
+  }
+  .viewButton:hover { background-image: url('http://www.playtexbabypool.com/dev/_/img/view-hoverState.png'); }
+  .manageSplit {
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/manageButton.png') 0 0 no-repeat;
+    height: 35px;
+    width: 106px;
+    display: inline-block;
+    margin:5px auto 0;
+    padding:0;
+    text-decoration:none;
+  }
+  .manageSplit:hover { background-image: url('http://www.playtexbabypool.com/dev/_/img/manage-hoverState.png'); }
+  .viewSplit {
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/split-viewButton.png') 0 0 no-repeat;
+    height: 35px;
+    width: 81px;
+    display: inline-block;
+    margin:5px auto 0;
+    padding:0;
+    text-decoration:none;
+  }
+  .viewSplit:hover { background-image: url('http://www.playtexbabypool.com/dev/_/img/split-view-hoverState.png'); }
+
+  .setupButton {
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/setupButton.png') 0 0 no-repeat;
+    height: 35px;
+    width: 87px;
+    display: inline-block;
+    margin:5px auto 0;
+    padding:0;
+    text-decoration:none;
+  }
+  .setupButton:hover { background-image: url('http://www.playtexbabypool.com/dev/_/img/setup-hoverState.png'); }
+
+
+
+/* -------------------   End of Slider Images Styling   --------------------------*/
+
+/*** Page Header (All Pages) ***/
+  .id-header {
+    background:#fff;
+    padding:0;
+    margin:0 auto;
+    border-bottom:1px #EBEBEB solid;
+  	-webkit-box-shadow: 0px 5px 6px -6px #cecece;
+  	   -moz-box-shadow: 0px 5px 6px -6px #cecece;
+  	        box-shadow: 0px 5px 6px -6px #cecece;
+  }
+  .header_wrap {
+    max-width: 1024px !important;
+    margin:0 auto;
+  }
+  .pbpLogo { float: left; padding:10px; }
+  .pbpLogo img { margin-top:0; padding-top:0; }
+  
+  .head_widget_wrap {
+    height:80px;
+    float:right;
+    text-align:right;
+    position:relative;
+  }
+  .head_widget {
+    display:inline-block;
+    position: relative !important;
+    text-align:center;
+    vertical-align:top;
+    font-size:14px;
+    padding:0 20px;
+    margin:0;
+    border-left:1px #dedede solid;
+    width:auto;/*28%*/
+    height:97px;
+  }
+  .head_widget_wrap.nav-subnav-shown .head_widget {
+    height:123px;
+  }
+  .head_widget.last {
+    margin-right: 0;
+    border-right:1px #dedede solid;
+  }
+  .head_widget .inner_widget {
+    display:inline-block;
+    position: relative !important;
+    vertical-align:bottom;
+    height:30px;
+    top: 71px;
+  }
+  .fbShare.head_widget .inner_widget {
+    top: 68px;
+    width: 87px;
+    height: 30px;
+  }
+  .fbLike.head_widget .inner_widget  {
+    top: 66px;
+  }
+  .head_widget_wrap.nav-subnav-shown .head_widget .inner_widget { top: 98px; }         /*  3 */
+  .head_widget_wrap.nav-subnav-shown .fbShare.head_widget .inner_widget { top: 95px; } /*  0 */
+  .head_widget_wrap.nav-subnav-shown .fbLike.head_widget .inner_widget  { top: 93px; } /* -2 */
+    /*
+  .fbInfo .fbImg {
+    text-align:center;
+    border:1px #cecece solid;
+  }
+  .logoutLink,
+  .fbInfo.head_widget a { display:block; clear:both; }
+  */
+
+
+/*** Content Area (All Pages) ***/
+  .id-content {
+    max-width: 1024px !important;
+    padding:0;
+    margin:0 auto;
+  }
+  .id-content .content_wrap {
+    margin-top:0;
+    padding:10px;
+  }
+  .id-content .content_wrap.content_PIP {
+    margin-top:-42px;
+    padding:10px;
+  }
+  .id-content .content_wrap.sharpTop { padding-top:0; }
+  
+  
+  .id-content .overlapUpper { margin-top:-68px; z-index:50; }
+  .id-content .overlapUpper.overlapClear { margin-top:0; z-index:50; }
+  .id-content .overlapUpper.poolCreate { margin-top:-45px; z-index:50; }
+  .id-content .overlapUpper.overlapClear.overlayRanked,
+  .id-content .overlapUpper.overlayRanked { margin-top:-54px; z-index:50; }
+  .id-content .overlapUpper a { z-index:50; }
+  .id-content .overlapObj { padding-bottom:20px; z-index:50; }
+
+  .badge {   /* http://jsfiddle.net/ThinkingStiff/mLW47/ */
+    color: #b10f2c;
+    background: #fff;
+    border-radius: 58px; /* one half of ( (border * 2) + height + padding ) */
+    box-shadow: 1px 1px 1px #000;
+    font-size:22px;
+    line-height:auto;
+    padding:4px 13px 3px 11px;
+    font-weight:bold;
+    text-align: center;
+    margin-left:8px;
+    margin-right:4px;
+    position: absolute;
+    top: -6px;
+  }
+  .navigation {
+    text-align:left;
+    margin:0 0 8px;
+    padding:0;
+    width:50%;
+  }
+  .navigation ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+  }
+  .navigation li { display:inline; margin:0; padding:0; }
+  .navigation li a {
+    display:inline;
+    margin:0;
+    padding:8px;
+    border:0;
+    border-top:1px #cccccc solid;
+    border-right:1px #cccccc solid;
+    color:#db1735;
+    font-size:14px;
+    text-decoration:underline;
+    text-shadow: 0 0 0 #888888;
+  }
+  .navigation li a.last {
+    border-right:none;
+  }
+  .navigation li a:hover {
+    color: #db1735;
+    background: #dfdfdf;
+    border-color: #bbbbbb;
+    text-decoration:none;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RmZGZkZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZmRmZGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #dfdfdf 0%, #dfdfdf 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfdfdf), color-stop(100%,#dfdfdf));
+    background: -webkit-linear-gradient(top,  #dfdfdf 0%,#dfdfdf 100%);
+    background: -o-linear-gradient(top,  #dfdfdf 0%,#dfdfdf 100%);
+    background: -ms-linear-gradient(top,  #dfdfdf 0%,#dfdfdf 100%);
+    background: linear-gradient(to bottom,  #dfdfdf 0%,#dfdfdf 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfdfdf', endColorstr='#dfdfdf',GradientType=0 );
+  }
+  .formWrap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .ribbon {
+    float: left;
+  }
+
+/*** Login & Play Page ***/
+  .headline_box {
+    padding:0; margin:0; border:0;
+    background: #fafafa; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhZmFmYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkYmRiZGIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #fafafa 0%, #dbdbdb 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafafa), color-stop(100%,#dbdbdb)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fafafa 0%,#dbdbdb 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fafafa 0%,#dbdbdb 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fafafa 0%,#dbdbdb 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fafafa 0%,#dbdbdb 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#dbdbdb',GradientType=0 ); /* IE6-8 */
+  }
+  div.doily {
+    z-index:90;
+    position: relative;
+    bottom: 10px;
+    height: 20px;
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/hr-doily-41.png') no-repeat scroll center;
+  }
+  div.smalldoily {
+    z-index:90;
+    position: relative;
+    bottom: 5px;
+    height: 10px;
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/hr-doily-24.png') no-repeat scroll center;
+  }
+  div.doily.aligntop,
+  div.smalldoily.aligntop {
+    bottom: 22px !important;
+  }
+  div.doily.alignmiddle,
+  div.smalldoily.alignmiddle {
+    bottom: 0 !important;
+  }
+  div.genderdoily-boy {
+    z-index:90;
+    position: relative;
+    bottom: 15px;
+    height: 58px;
+    margin: 10px 0;
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/icon-male.png') no-repeat scroll center;
+  }
+  div.genderdoily-girl {
+    z-index:90;
+    position: relative;
+    bottom: 15px;
+    height: 58px;
+    margin: 10px 0;
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/icon-female.png') no-repeat scroll center;
+  }
+  div.genderdoily-boy.aligntop,
+  div.genderdoily-girl.aligntop {
+    bottom: 80px !important;
+  }
+  div.genderdoily-boy.alignmiddle,
+  div.genderdoily-girl.alignmiddle {
+    bottom: 0 !important;
+  }
+  div.doily hr,
+  div.smalldoily hr,
+  div.genderdoily-boy hr,
+  div.genderdoily-girl hr {
+    display: none;
+  }
+  .headline_welcome {
+    border-bottom:1px #fff solid; 
+    height: 375px;
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/new_mommy_background.jpg') right top no-repeat;
+  }
+  .slogan { font-size:14px; font-weight: normal; }
+    .slogan img { width:373px; margin:20px 20px 0px 20px; }
+  .welcome_desc.outerText {
+    text-shadow: none !important;
+    color: #fff !important;
+    width:333px; /*373*/
+    height: 192px;
+    padding:20px;
+    margin:20px;
+    background: transparent url('http://www.playtexbabypool.com/dev/_/img/welcome-box-background.png') right top no-repeat;
+  }
+  .welcome_desc.outerText .innerHead { color:#fff; margin:0; padding:0; font-size:38px; font-weight:400; }
+  .welcome_desc.outerText .innerText { margin:0; padding:0; font-size:20px; font-weight:300; font-family: "proxima-nova-extra-condensed",sans-serif; }
+  .welcome_desc .innerText .foldblock,
+    .fbLoginBtn_txt .foldblock { display:block; clear:block; }
+  .welcome_desc.outerText .innerButton { margin:16px 0 0; padding:0; }
+    .welcome_desc.outerText .innerButton a { margin:0; padding:0; }
+  
+  .hrGenderCircle { text-align:center; margin-top:-86px; }
+  .hrGenderCircle img { width:129px; margin:0; padding:0; border:0; }
+  
+  .fbLoginBtn { width:100%; padding:20px 0; text-align:center; }
+    .fbLoginBtn .fbLoginBtn_btn,
+    .fbLoginBtn .fbLoginBtn_btn .fb-login-button,
+    .fbLoginBtn .fbLoginBtn_btn .fb-login-button span,
+    .fbLoginBtn .fbLoginBtn_btn .fb-login-button span iframe {
+      /*width:177px !important;*/
+      /*height:40px !important;*/
+      margin:0 auto !important;
+      padding: 0 !important;
+    }
+    .fbLoginBtn_btn a:hover {
+    	zoom: 1;
+    	filter: alpha(opacity=80);
+    	opacity: 0.8;
+    }
+    .fbLoginBtn .fbLoginBtn_txt { margin:0 auto; padding:20px; text-align:center; }
+    .fbLoginBtn .fbLoginBtn_gl { margin:0 auto; text-align:center; }
+    .fbLoginBtn .fbLoginBtn_gl img { margin:10px auto; text-align:center; }
+
+  .poolList { text-align: center !important; }
+  /* .poolList .ui-collapsible-heading-toggle .ui-btn-inner { text-align:center; } */
+  .slider1,
+  .slider2,
+  .list_carousel {
+    position:relative;
+    padding:0;
+    cursor:auto !important;
+  }
+  .list_carousel .userIdImage img { width:90px; height:90px; }
+  .list_carousel .usersFullName { font-size:16px; font-weight:bold; }
+  .slider1, .slider2,
+  .list_carousel ul {
+  	margin: 0 !important;
+  	padding: 0 !important;
+  	list-style: none;
+  	display: block;
+  }
+  .list_carousel li {
+  	color: #666;
+  	text-align: center;
+  	padding: 0;
+  	margin: 0;
+  	display: block;
+  	float: left;
+  }
+  a.prev, a.next {
+  	background: transparent url('http://www.playtexbabypool.com/dev/_/img/arrows-choose-pool.png') 0 0 no-repeat;
+  	width: 38px;
+  	height: 70px;
+  	display: block;
+  	position: absolute;
+  	border:0 #000 solid;
+  }
+  a.prev span, a.next span { display: none; }
+  a.slid1_prev.prev, a.slid1_prev.prev:hover {
+    top:40px; left:0;
+    background-position: 2px 0;
+  }
+  
+  a.slid1_next.next,
+  a.slid1_next.next:hover {
+    top:40px; right:0;
+    background-position: -52px 0;
+  }
+
+  a.slid2_prev.prev,
+  a.slid2_prev.prev:hover {
+    top:40px; left:0;
+    background-position: 2px 0;
+  }
+  a.slid2_next.next,
+  a.slid2_next.next:hover {
+    top:40px; right:0;
+    background-position: -52px 0;
+  }
+  
+  a.slid1_next.next,
+  a.slid1_next.next:hover,
+  a.slid1_prev.prev,
+  a.slid1_prev.prev:hover { display:none; }
+
+/*** Create Pool Page ***/
+  .likePopupBox { }
+  .fb_like_wrapper {
+    padding:30px 0;
+    margin-left: -80px;
+  }
+    .fb_profile_img {
+      display:inline-block;
+    }
+  .fb_like_txt_wrap {
+    padding-top:5px;
+    padding-left:20px;
+    vertical-align: top;
+    display:inline-block
+  }
+    .fb_like_us {
+      display:block;
+      padding-bottom:15px !important;
+    }
+    .fb_like_btn {
+      display:block;
+    }
+    
+  .sendInvite_wrap {
+    margin:0 auto;
+    text-align:center;
+  }
+  .sendMeHomeBtn_wrap { display:none; }
+  
+/*** Single Pool Page ***/
+  .registryLink {
+    float:right;
+    position: relative;
+    /* bottom: 19px; */
+    display:inline-block;
+    color:#fff;
+    border:3px #919598 solid;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    height:50px;
+    margin: 10px 15px 0 0;
+    text-shadow:none;
+  	background: #db1735 /*{b-bup-background-color}*/;
+  	background-image: -webkit-gradient(linear, left top, left bottom, from( #f91a3c /*{b-bup-background-start}*/), to( #bc132d /*{b-bup-background-end}*/)); /* Saf4+, Chrome */
+  	background-image: -webkit-linear-gradient( #f91a3c /*{b-bup-background-start}*/, #bc132d /*{b-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+  	background-image:    -moz-linear-gradient( #f91a3c /*{b-bup-background-start}*/, #bc132d /*{b-bup-background-end}*/); /* FF3.6 */
+  	background-image:     -ms-linear-gradient( #f91a3c /*{b-bup-background-start}*/, #bc132d /*{b-bup-background-end}*/); /* IE10 */
+  	background-image:      -o-linear-gradient( #f91a3c /*{b-bup-background-start}*/, #bc132d /*{b-bup-background-end}*/); /* Opera 11.10+ */
+  	background-image:         linear-gradient( #f91a3c /*{b-bup-background-start}*/, #bc132d /*{b-bup-background-end}*/);
+  }
+  .registryLink_img { }
+  .registryLink_img img {
+    float:left; display:inline-block; height:50px; width:auto;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-shadow:none; 
+  }
+  .registryLink_txt {
+    display:inline-block; text-align:center; padding:5px 10px; margin:0;
+  }
+  .registryLink_txt .registry { color:#fff; text-shadow:0px 1px 1px #000; font-size:18px; display:block; padding:0; margin:0; }
+  .registryLink_txt .rL_txt { color:#fff; text-shadow:none; font-size:12px; display:block; padding:0; margin:0; }
+  .registryLink:hover,
+  .registryLink:hover .registry { color:#000; text-shadow:none; }
+  
+  .poolTitleTop { display:block; padding-bottom:15px; }
+  .poolTitle { float:left; padding-left:10px; margin:0; }
+  .edit_wrap { margin-left:20px; }
+
+  .poolTopInfo { position:relative; }
+  .poolTopInfo .poolTopInfo_bg { width:100%; position:relative; top:0; left:0; z-index:10; }
+  .poolTopInfo .poolTopInfo_bg img { width:100%; }
+  .poolTopInfo .poolTopInfo_fg { width:100%; position:absolute; top:0; left:0; z-index:20; }
+  .poolTopInfo .poolTopInfo_fg .poolInfoBox { text-align:center; }
+  .poolTopInfo .poolTopInfo_fg .pTI_image { padding-left:20px; }
+  .poolTopInfo .poolTopInfo_fg .pTI_image img { width:98%; border:5px solid rgba(88,88,88,0.1); }
+  .poolTopInfo .poolTopInfo_fg .pTI_image .landscape { width:98%; height:auto; }
+  .poolTopInfo .poolTopInfo_fg .pTI_image .portrait { width:auto; height:250px; }
+  .poolTopInfo .poolTopInfo_fg .pTI_text { margin-top:5%; padding-top:20px; }
+  .poolTopInfo .poolTopInfo_fg .pTI_ad { padding-top:25px; padding-right:25px; }
+
+  .advertisement {
+    display:block;
+    text-align:center;
+    padding: 0;
+    margin : 0;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    zoom:1;
+  }
+  .advertisement a { display:block; }
+  .advertisement a:hover { filter: alpha(opacity=80); opacity: 0.8; }
+  .advertisement a img {
+    padding:2px;
+    width:100%;
+    height:auto;
+    /*border:1px #eee solid;*/
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+  }
+  .photoSelect {
+    margin-top:-23px !important;
+  }
+  
+  /*
+  .poolInfo {
+    text-align:center;
+    margin:0;
+    padding:0;
+    background:transparent url('http://playtexbabypool.com/dev/_/img/dskt_topbar_bg.png') 50% bottom no-repeat;
+    background-size: 100%;
+    height: 260px;
+    border-bottom: 3px solid #fff;
+  }
+
+  .poolInfo .poolInfoBox {
+    display:inline-block;
+    padding:0; 
+    margin:0 0 20px;
+    max-height:251px;
+    max-width:250px;
+    width:100%;
+  }
+  .poolInfo .poolInfo_txt.poolInfoBox { max-height:none; max-width:none; }
+  .poolInfo .profile_img {
+    border:5px solid rgba(88,88,88,0.2);
+    max-width:250px;
+    max-height:250px;
+    margin-bottom:-200px;
+  }
+  .poolInfo .profile_img.landscape { width:100%; height:auto; }
+  .poolInfo .profile_img.portrait { width:auto; height:auto; }
+  .poolInfo .poolInfo_txt { padding:30px 5px 5px; text-align:center; }
+  */
+  
+  .viewWinners { }
+  .viewWinners .ribbon { padding:5px 10px; }
+  .viewWinners .winning_image { }
+  .viewWinners .winning_info {
+    font-size:11px;
+    padding:5px;
+  }
+  .viewWinners .winning_info .top4_line { display:block; }
+  .viewWinners .winning_info .winFullName {
+    font-size:14px;
+    font-weight:bold;
+  }
+  
+  .viewWinners .ranked_1 { }
+  .viewWinners .ranked_2 { }
+  .viewWinners .ranked_3 { }
+
+  .weighteach { width:49%; display:inline-block; }
+  .weighteach div.ui-slider { margin:0; }
+  .lb-length,
+  .lb-weight_lbs,
+  .lb-weight_oz { font-size:12px !important; font-weight:normal !important; padding-top:0 !important; }
+  #length { margin-top:0 !important; }
+  #weight_lbs, .weight_lbs,
+  #weight_oz,  .weight_oz { margin-top:0 !important; display:block !important; margin-bottom:10px !important;}
+
+  .viewGuessesList {
+    width:100%;
+    vertical-align: bottom;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+    text-shadow: none !important;
+  }
+  .viewGuessesList th {
+    font-weight: normal;
+    background-color:#888;
+    color:#fff;
+    text-shadow:none;
+    vertical-align: middle;
+  }
+  .viewGuessesList tr {
+    vertical-align: bottom;
+    text-shadow: none !important;
+    background: #eaebec !important;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE4JSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWViZWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)  !important;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 18%, #eaebec 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(18%,#ffffff), color-stop(100%,#eaebec)) !important;
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 18%,#eaebec 100%) !important;
+    background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 18%,#eaebec 100%) !important;
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 18%,#eaebec 100%) !important;
+    background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 18%,#eaebec 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eaebec',GradientType=0 ) !important;
+  }
+  .viewGuessesList tr td {
+    height: 102px !important;
+    vertical-align: bottom !important;
+  }
+  .viewGuessesList tr.my_guess { color:#c61530; border-color:#c61530; } 
+  .viewGuessesList tr.my_guess .guessersImg { border-color:#c61530 }
+  .viewGuessesList tr.my_guess td { }
+  
+  .viewGuessesList td,
+  .viewGuessesList th {
+    text-shadow: none !important;
+    padding:6px 5px 10px;
+    text-align: center;
+  }
+  .viewGuessesList thead.thead tr.tablesorter-headerRow th.tablesorter-header {
+  	border-color: #c5c7c6;
+    background-color: #c5c7c6;
+  }
+  .viewGuessesList thead.thead tr.tablesorter-headerRow th.tablesorter-header.tablesorter-headerSortUp,
+  .viewGuessesList thead.thead tr.tablesorter-headerRow th.tablesorter-header.tablesorter-headerSortDown,
+  .viewGuessesList thead.thead tr.tablesorter-headerRow th.tablesorter-header.tablesorter-headerAsc,
+  .viewGuessesList thead.thead tr.tablesorter-headerRow th.tablesorter-header.tablesorter-headerDesc {
+  	border-color: #696d70 !important;
+    background-color: #696d70 !important;
+  }
+  .viewGuessesList .guessersImg {
+    display:block;
+    clear:both;
+    margin:10px auto 5px;
+    vertical-align:bottom;
+    border:1px solid #7c7c7c;
+  }
+  .viewGuessesList td .guess_gender {
+    margin-bottom: -14px;
+  }
+  .ui-datebox-container .ui-header .ui-btn-left { /* force right alignment on [X] */
+    /*left: auto !important;*/
+    /*right: 5px !important;*/
+  }
+  .ui-datebox-griddate-disable { /* dull out disabled cal dates */
+    color: #888 !important;
+    background: transparent !important;
+    border-color: transparent !important;
+  }
+
+/*** Footer (All Pages) ***/
+  .id-footer {
+    max-width: 1024px !important;
+    margin:0 auto;
+  }
+  .footer_wrap { font-size:12px; margin:60px auto 5px auto; padding:10px 20px; text-align:left; }
+  .footer_wrap img.footer_logo { float:left; padding-right:5px; }
+  .footer_wrap .footer_text { padding:5px; }
+  .footer_wrap .footer_text .ft_each  { display:block }
+  fieldset.error .ui-controlgroup-controls .ui-radio label,
+  .ui-checkbox.error label { border-color:#f00 !important; }
+  label.error { 
+  	color: #f00;
+  	margin:0;
+  	padding:0 2px 2px;
+  	font-size:14px;
+  	vertical-align:top;
+  }
+
+/* Retina Screens */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+  
+  .ui-icon-female {
+    display:block;
+    /*height: 28px !important;*/
+    background: url('http://playtexbabypool.com/dev/_/img/girl_icon50.png') 0 0 no-repeat !important;
+    background-size: 23px 27px;
+  }
+  .ui-btn-active .ui-icon-female {
+    display:block;
+    /*height: 28px !important;*/
+    background: url('http://playtexbabypool.com/dev/_/img/girl_icon50White.png') 0 0 no-repeat !important;
+    background-size: 23px 27px;
+  }
+  .ui-icon-male {
+    display:block;
+    /*height: 28px !important;*/
+    background: url('http://playtexbabypool.com/dev/_/img/boy_icon50.png') 0 0 no-repeat !important;
+    background-size: 24px 26px;
+  }
+  .ui-btn-active .ui-icon-male {
+    display:block;
+    /*height: 28px !important;*/
+    background: url('http://playtexbabypool.com/dev/_/img/boy_icon50White.png') 0 0 no-repeat !important;
+    background-size: 24px 26px;
+  }
+  .closeBtn {
+    background: url("http://www.playtexbabypool.com/dev/_/img/popup_close_btn_x2.png") 0 0 no-repeat !important;
+    background-size: 32px 32px;
+  }
+  .closeBtn:hover {
+    background: url("http://www.playtexbabypool.com/dev/_/img/popup_close_btn_x2_hover.png") 0 0 no-repeat !important;
+    background-size: 32px 32px;
+  }
+
+}
+
+/*** 801-900px width CSS ***/
+@media only screen and (max-width : 900px) and (min-width : 801px) {
+
+/*** Login Page & Play Page ***/
+  .headline_welcome {
+    background-position:-120px top;
+  }
+  
+/*** Single Pool Page ***/
+  .id-content .overlapUpper { margin-top:-58px; z-index:50; }
+  
+  .poolTopInfo .poolTopInfo_fg .pTI_text .condensed { font-size:26px !important; }
+  .poolTopInfo .poolTopInfo_fg .pTI_text { font-size:14px; }
+  
+
+}
+
+
+/*** 601-800px width CSS ***/
+@media only screen and (max-width : 800px) and (min-width : 601px) {
+
+/*** General CSS (All Pages) ***/
+  .photoSelect,
+  .photoSelect .ui-btn-inner,
+  .photoSelect .ui-btn-inner .ui-btn-text { font-size:14px !important; }
+  .head_widget {
+    padding:0 14px;
+  }
+  
+/*** Login Page & Play Page ***/
+  .headline_welcome {
+    background-position:-120px top;
+  }
+  
+/*** Create Pool Page ***/
+  .likePopupBox { }
+  .fb_like_wrapper {
+    display:inline-block;
+    padding:30px 0;
+    margin-left:0;
+  }
+  .fb_profile_img {
+    width:20%;
+  }
+  .fb_like_txt_wrap {
+    display:inline-block;
+    width:70%;
+    padding-top:5px;
+    padding-left:20px;
+  }
+    .fb_like_us {
+      padding-bottom:15px !important;
+      width:90%;
+    }
+    .fb_like_btn {
+    }
+    .fb_like_btn span,
+    .fb_like_btn iframe {
+    }
+ 
+/*** Single Pool Page ***/
+  /*
+	table.responsive { margin-bottom: 0; }
+	.pinned { position: absolute; left: 0; top: 0; background: #fff; width: 35%; overflow: hidden; overflow-x: scroll; border-right: 1px solid #ccc; border-left: 1px solid #ccc; }
+	.pinned { display:none; width:0 !important; }
+	.pinned table { border-right: none; border-left: none; width: 100%; }
+	.pinned table th, .pinned table td { white-space: nowrap; }
+	.pinned td:last-child { border-bottom: 0; }
+	div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border-right: 1px solid #ccc; }
+	div.table-wrapper { border-right:0 !important; }
+	div.table-wrapper div.scrollable table { margin-left: 35%; }
+	div.table-wrapper div.scrollable table { margin-left: 0 !important; }
+	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }	
+	div.table-wrapper div.scrollable { overflow-y: scroll; max-height:500px; }
+	table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
+	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
+  .scrollable::-webkit-scrollbar-corner,
+  .scrollable::-webkit-resizer { -webkit-appearance:none; }
+  .scrollable::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 11px;
+      height: 11px;
+  }
+  .scrollable::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      border: 2px solid #f0f0f0;
+      background-color: rgba(0, 0, 0, .5);
+  }
+  */
+  .id-content .overlapUpper { margin-top:-34px; }
+
+  .poolTopInfo .poolTopInfo_fg .pTI_text .condensed { font-size:26px !important; }
+  .poolTopInfo .poolTopInfo_fg .pTI_text { font-size:14px; margin-top:5px; padding-top:20px; }
+  
+}
+
+
+
+
+
+/*** Mobile Experience CSS ***/
+@media only screen and (max-width : 600px) {
+  .hideAll { display:none !important; }
+  .hideMobile { display:none !important; }
+  .showMobile { display:inline; }
+  .showMobileBlock { display:block; }
+  .showMobileTable { display:table-row; }
+  
+  .grid_1, .grid_2, .grid_3,
+  .grid_4, .grid_5, .grid_6,
+  .grid_7, .grid_8, .grid_9,
+  .grid_10, .grid_11, .grid_12,
+  .container_12 .grid_1, .container_12 .grid_2, .container_12 .grid_3,
+  .container_12 .grid_4, .container_12 .grid_5, .container_12 .grid_6,
+  .container_12 .grid_7, .container_12 .grid_8, .container_12 .grid_9,
+  .container_12 .grid_10, .container_12 .grid_11, .container_12 .grid_12
+  { float:none; display:block; width:100%; margin:0 auto; }
+
+/*** Page Header (All Pages) ***/
+  .id-header { padding:0; }
+  .header_wrap,
+  .pbpLogo,
+  .head_widget_wrap,
+  .head_widget_wrap.nav-subnav-shown {
+    width:100%;
+    display:block;
+    float:none;
+    text-align:center;
+    margin:0 auto;
+    height:auto;
+  }
+  .header_wrap { padding-bottom: 5px; }
+  .head_widget_wrap,
+  .head_widget_wrap.nav-subnav-shown {
+    background:#f0f0f0;
+    padding:0;
+    border-bottom:1px #EBEBEB solid;
+    margin-bottom:5px;
+  }
+  .head_widget_wrap a { text-shadow: none; }
+  .fbImg { display:none; }
+  .navigation {
+    text-align:center;
+    width:100%;
+  }
+  .navigation ul { width:100%; }
+
+  .head_widget_wrap.nav-subnav-shown .head_widget,
+  .head_widget {
+    height: 50px;
+    font-size:13px;
+    text-shadow: none;
+    padding:0 12px;
+    border-left:1px #dedede solid;
+  }
+  .head_widget_wrap.nav-subnav-shown .head_widget .inner_widget,
+  .head_widget .inner_widget {
+    height: 22px;
+    top: 20px;
+  }
+  .head_widget_wrap.nav-subnav-shown .fbShare.head_widget .inner_widget,
+  .fbShare.head_widget .inner_widget {
+    top: 16px;
+  }
+  .head_widget_wrap.nav-subnav-shown .fbLike.head_widget .inner_widget,
+  .fbLike.head_widget .inner_widget  {
+    top: 14px;
+  }
+  
+  .id-content .content_wrap.content_PIP { margin-top:0; }
+  .id-content .content_wrap.mobi-sharpTop { padding-top:0; }
+
+  .id-content .overlapUpper { margin-top:10px; }
+  .id-content .overlapObj { margin-bottom:10px; }
+  .id-content .overlapUpper.overlapClear { margin-top:0; }
+  .id-content .overlapUpper.poolCreate { margin-top:0; }
+  .id-content .overlapUpper.overlapClear.overlayRanked,
+  .id-content .overlapUpper.overlayRanked { margin-top:0; }
+
+  
+  
+/*** Login Page & Play Page ***/
+  .headline_box {
+    
+  }
+  .headline_welcome {
+    padding-bottom:0;
+    margin-bottom:0;
+    border-bottom:0; 
+    background-image: url('http://playtexbabypool.com/dev/_/img/main-mommy-mobile.jpg');
+    background-position: center center;
+    height: auto !important;
+  }
+  .welcome_desc.outerText {
+    color:#919598 !important;
+    margin:0;
+    background-image: none;
+    background: transparent;
+    width:59%;
+  }
+  .welcome_desc.outerText .innerHead { font-size:26px; color: #919598;}
+  .welcome_desc.outerText .innerText {
+    font-size:14px;
+    font-family: "proxima-nova",sans-serif;
+  }
+  .welcome_desc .innerText .foldblock,
+    .fbLoginBtn_txt .foldblock { display:inline; clear:none; }
+    .welcome_desc.outerText .innerButton { margin:15px 0 0; padding:0; }
+  /*
+  #eachYourPool { display:block; margin:0 auto 20px; auto; clear:both; }
+  #eachFriendsPool { display:block; margin:0 auto 20px; auto; clear:both; }
+  */
+  
+  .hrGenderCircle { margin-top:-71px; } /* half of img height */
+  .hrGenderCircle img { width:100px; }
+
+/*** Create Pool Page ***/
+  .likePopupBox { }
+  .fb_like_wrapper {
+    display:inline-block;
+    padding:10px 0;
+    margin-left:0;
+  }
+    .fb_profile_img {
+      display: block;
+      margin:0 auto;
+      padding-bottom: 20px;
+    }
+  .fb_like_txt_wrap {
+    display:block;
+    width:70%;
+    padding-top:5px;
+    padding-left:0;
+    text-align:center;
+    margin:0 auto;
+  }
+    .fb_like_us {
+      padding-bottom:15px !important;
+      width: 100%;
+    }
+    .fb_like_btn {
+      width: 280px !important;
+    }
+    .fb_like_btn span,
+    .fb_like_btn iframe {
+      width: 280px !important;
+    }
+    
+  .photoSelect {
+    margin-top:-50px !important;
+  }
+
+    
+/*** SPP: Single Pool Page ***/
+  .mobi_registryLink_wrap {
+    margin:20px auto;
+    text-align:center;
+    display:block;
+  }
+  .mobi_registryLink {
+    display:inline-block;
+    color:#fff;
+    border:3px #919598 solid;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    float:none;
+    height:50px;
+    text-shadow:none;
+  	background: #db1735 /*{b-bup-background-color}*/;
+  	background-image: -webkit-gradient(linear, left top, left bottom, from( #f91a3c /*{b-bup-background-start}*/), to( #bc132d /*{b-bup-background-end}*/)); /* Saf4+, Chrome */
+  	background-image: -webkit-linear-gradient( #f91a3c /*{b-bup-background-start}*/, #bc132d /*{b-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+  	background-image:    -moz-linear-gradient( #f91a3c /*{b-bup-background-start}*/, #bc132d /*{b-bup-background-end}*/); /* FF3.6 */
+  	background-image:     -ms-linear-gradient( #f91a3c /*{b-bup-background-start}*/, #bc132d /*{b-bup-background-end}*/); /* IE10 */
+  	background-image:      -o-linear-gradient( #f91a3c /*{b-bup-background-start}*/, #bc132d /*{b-bup-background-end}*/); /* Opera 11.10+ */
+  	background-image:         linear-gradient( #f91a3c /*{b-bup-background-start}*/, #bc132d /*{b-bup-background-end}*/);
+  }
+  .mobi_registryLink_img { }
+  .mobi_registryLink_img img {
+    float:left; display:inline-block; height:50px; width:auto;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    text-shadow:none; 
+  }
+  .mobi_registryLink_txt {
+    display:inline-block; text-align:center; padding:5px 10px; margin:0;
+  }
+  .mobi_registryLink_txt .mobi_registry { text-decoration: none; color:#fff; text-shadow:0px 1px 1px #000; font-size:18px; display:block; padding:0; margin:0; }
+  .mobi_registryLink_txt .rL_txt { color:#fff; text-shadow:none; font-size:12px; display:block; padding:0; margin:0; }
+  .mobi_registryLink:hover,
+  .mobi_registryLink:hover .mobi_registry { color:#000; text-shadow:none; }  
+  
+  .poolTopInfo { }
+  .poolTopInfo .poolTopInfo_bg { display:none; }
+  .poolTopInfo .poolTopInfo_fg { width:auto; position:relative; }
+  .poolTopInfo .poolTopInfo_fg .poolInfoBox { text-align:center; }
+  .poolTopInfo .poolTopInfo_fg .pTI_image { padding-left:0; }
+  .poolTopInfo .poolTopInfo_fg .pTI_image img { width:220px; }
+  .poolTopInfo .poolTopInfo_fg .pTI_image .landscape { width:220px; }
+  .poolTopInfo .poolTopInfo_fg .pTI_image .portrait { width:auto; height:220px; }
+  .poolTopInfo .poolTopInfo_fg .pTI_text { text-align:center; margin:10px auto; padding:5px; }
+  .poolTopInfo .poolTopInfo_fg .pTI_ad { display:none; }
+  
+  /*
+  .poolInfo {
+    height:auto;
+    background-image: none;
+    border: none;
+  }
+  .poolTitleTop .poolTitle { 
+    text-align:center; 
+    float:none; 
+    margin:0 auto; 
+    display:block; 
+    clear:both; 
+  }
+  .poolTitleTop .edit_wrap { 
+    text-align:center; 
+    clear:both; 
+    display:block; 
+    margin:0 auto 20px; 
+  }
+  .poolInfo .poolInfoBox {
+    text-align:center;
+    margin:0 auto 20px auto;
+  }
+  .poolInfo .profile_img { display:block; max-width:220px; text-align:center; margin:20px auto; }
+  .poolInfo .poolInfo_txt {padding: 0; }
+  */
+  
+  .advertisement { margin:20px auto; text-align:center; }
+  .advertisement img { width:100%; height:auto; max-width:320px; }
+
+  .fieldName,
+  .pinned,
+  .thead { display:none; }
+  
+  .headingHead {
+    margin-top: 0;
+    font-size: 30px;
+  }
+  
+  .viewWinners,
+  .viewWinners .ranked_1,
+  .viewWinners .ranked_2,
+  .viewWinners .ranked_3 { display:block !important; clear: both; }
+  .viewWinners .winning_info { }
+
+  .poolGuesses .ui-collapsible-content {
+    padding:0 !important;
+  }
+  .viewMobileTheWinners,
+  .viewMobileTheWinners .ui-collapsible-content,
+  .viewMobileTheWinners .ui-collapsible-content .viewWinners, /* viewGuessesList */
+  .viewMobileTheWinners .ui-collapsible-content .viewWinners .vGL_table,
+  .viewMobileTheWinners .ui-collapsible-content .viewWinners .vGL_table .tbody,
+  .viewMobileTheWinners .ui-collapsible-content .viewWinners .vGL_table .tbody tr,
+  .viewMobileTheWinners .ui-collapsible-content .viewWinners .vGL_table .tbody tr.showMobileTable td {
+    width:100% !important;
+  }
+  .vGL_table .tbody tr { padding:15px; }
+
+  .vGL_table {
+    border-spacing:1px 0 !important;
+  }
+  .vGL_table tr {
+    text-align:center;
+    background: #eaebec !important;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YzZjNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlYWViZWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) !important;
+    background: -moz-linear-gradient(top,  #f3f3f3 0%, #eaebec 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3f3f3), color-stop(100%,#eaebec)) !important;
+    background: -webkit-linear-gradient(top,  #f3f3f3 0%,#eaebec 100%) !important;
+    background: -o-linear-gradient(top,  #f3f3f3 0%,#eaebec 100%) !important;
+    background: -ms-linear-gradient(top,  #f3f3f3 0%,#eaebec 100%) !important;
+    background: linear-gradient(to bottom,  #f3f3f3 0%,#eaebec 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#eaebec',GradientType=0 ) !important;
+  }
+  .vGL_table .mobileNameColumn {
+    background: #eaebec !important;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmM2YzZjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+) !important;
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f3f3f3)) !important;
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%) !important;
+    background: -o-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%) !important;
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f3f3f3 100%) !important;
+    background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f3f3f3',GradientType=0 ) !important;
+    vertical-align:middle !important;
+    text-align: left;
+    /*
+    clear:both;
+    white-space:nowrap;
+    font-weight:500;
+    */
+    font-size:14px;
+    margin-top : 0;
+    padding-top: 10px;
+    margin-bottom : 0;
+    padding-bottom: 0;
+    padding-left : 20px;
+    padding-right: 20px;
+  }
+  .vGL_table tr td {
+    margin-top  : 0;
+    padding-top : 10px;
+    height: auto !important;
+    font-size:11px;
+  }
+  .vGL_table tr.my_guess { }
+  .vGL_table tr.my_guess .guessersImg { }
+  .vGL_table tr.my_guess td { }
+  .vGL_table .mobile-guessersImg {
+    text-align:left;
+    margin-right:20px;
+    vertical-align:middle !important;
+  }
+  .vGL_table .genderIcon {
+    width:70px;
+  }
+  .vGL_table .guess_gender {
+    width:70%;
+    margin-bottom: -4px;
+  }
+
+    
+/*** Footer (All Pages) ***/
+  .footer_wrap { text-align:center; margin-bottom:10px; }
+  .footer_wrap img.footer_logo { float:none; display:block; margin:0 auto; padding:5px 0; }
+  .footer_wrap .footer_text .playtexbabydotcom { display:block; clear:both; }
+  .footer_wrap .footer_text .ft_each { padding-bottom:10px; }
+  .footer_wrap .footer_text .mobileBlock { display:block; clear:both; }
+
+/* end */
+
+}
+
+.ui-popup-container .genderBtn_b, .ui-popup-container .genderBtn_g  {
+  padding-top: 0;
+}
